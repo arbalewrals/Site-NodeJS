@@ -1,0 +1,34 @@
+{
+    "utilizatori": [
+    {
+        "username": "admin",
+        "password": "admin",
+        "nume": "admin",
+        "prenume": "admin"
+    },
+    {
+        "username": "user",
+        "password": "user",
+        "nume": "user",
+        "prenume": "user"
+    },
+    {
+        "username": "razvan",
+        "password": "razvan",
+        "nume": "Razvan",
+        "prenume": "Ionescu"
+    },
+    {
+        "username":"florin",
+        "password":"florin",
+        "nume":"Florin",
+        "prenume":"Nistor"
+    },
+    {
+        "username":"nicu",
+        "password":"nicu",
+        "nume":"Nicu",
+        "prenume":"Ciobanu"
+    }
+    ]
+}

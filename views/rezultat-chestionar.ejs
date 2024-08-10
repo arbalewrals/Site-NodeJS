@@ -1,0 +1,23 @@
+<h1>Rezultatul chestionarului</h1>
+
+<p>Ai răspuns corect la <%= nrRaspCorecte %> din <%= nrIntrebari %> întrebări.</p>
+
+<ul>
+  <% for (let i = 0; i < questions.intrebari.length; i++) { %>
+    <li>
+      <h2><%= questions.intrebari[i].intrebare %></h2>
+      <p>Răspunsul tău: <%= raspunsuri['intrebare'+i] %></p>
+      <% if (questions.intrebari[i].corect === raspunsuri['intrebare'+i]) { %>
+        <p style="color:rgb(0, 255, 0)"><strong>Răspuns corect!</strong></p>
+      <% } else { %>
+        <p style="color:rgb(255, 0, 0)"><strong>Răspuns greșit!</strong></p>
+        <p>Răspunsul corect: <%= questions.intrebari[i].corect %></p>
+      <% } %>
+    </li>
+  <% } %>
+  </ul>
+
+
+
+
+

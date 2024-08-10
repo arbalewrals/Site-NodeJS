@@ -1,0 +1,46 @@
+<% if(username&&session.username) { %>
+<h1 style="color:rgb(0, 21, 247)">Bine ai venit, <%=username %></p>
+<a href="/logout">Logout</a>
+<% }%>
+<% if(!session.username) { %>
+<a href="/autentificare"> Autentificare </a>
+<% }%>
+<div id="BD">
+<form action="/creare-bd" method="GET">
+    <button type="submit" name="creareBD">Creare BD</button>
+</form>
+
+<form action="/inserare-bd" method="GET">
+    <button type="submit" name="incarcareBD">Incarcare BD</button>
+</form>
+</div>
+<table id="produse" name="produse">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
+            <tr>
+              <th scope="row"><%= (i+1) %></th>
+              <td><%= data[i].name%></td>
+              <td><%= data[i].qty%></td>
+              <td>
+                <form action="/adaugare-cos" method="POST">
+                    <% if (session.username) { %>
+                        <input type="submit" name="<data[i].id" value="Adauga in cos">
+                        <% } %>
+                </form>
+              </td>
+              
+            </tr>
+            <% } }else{ %>
+            <tr>
+              <td>No data ever existed.</td>
+            </tr>
+            <% } %>
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+        {
+            "intrebari": [
+            {
+            "intrebare": "Cine a scris Harry Potter?",
+            "variante": ["J.K. Rowling", "J.R.R. Tolkien", "Jules Verne", "Stephen King"],
+            "corect":   "J.K. Rowling"
+            },
+            {
+            "intrebare": "Cine a scris Dune?",
+            "variante": ["Frank Herbert", "Isaac Asimov", "George Orwell", "Mihai Eminescu"],
+            "corect":     "Frank Herbert"
+            },
+            {
+            "intrebare": "Cine a scris 11/22/63?",
+            "variante": ["Stephen King", "Lev Tolstoi", "Homer", "Jules Verne"],
+            "corect":     "Stephen King"
+            },
+            {
+            "intrebare": "Cine a scris Adolescentul?",
+            "variante": ["F.M. Dostoievski", "Mihai Eminescu", "Ion Creanga", "Ion Luca Caragiale"],
+            "corect":     "F.M. Dostoievski"
+            }
+            ]
+        }
